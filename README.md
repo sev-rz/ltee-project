@@ -59,3 +59,7 @@ Project layout generated from the Reproducible and Open Science project template
 
 
 Practice project from the Reproducible and Open Science lessons.
+
+## Get the data
+
+    pixi exec python scripts/download_data.py
