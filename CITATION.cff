@@ -4,10 +4,9 @@ title: "LTEE variant calling"
 abstract: "Variant calling on three E. coli samples from the Long-Term Evolution Experiment"
 type: software
 authors:
-  - given-names: "Ada"
-    family-names: "Lovelace"
-    email: "ada@example.org"
-repository-code: "https://github.com/ada-lovelace/ltee-project"
+  - given-names: "Sevinch"
+    family-names: "Rakhmon-Zoda"
+repository-code: "https://github.com/sev-rz/ltee-project"
 license: MIT
 version: 0.1.0
 date-released: "2026-11-03"
