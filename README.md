@@ -2,7 +2,7 @@
 
 Variant calling on three E. coli samples from the Long-Term Evolution Experiment
 
-Author: Ada Lovelace
+Author: Sevinch Rakhmon-Zoda
 
 ## Reproduce the results
 
