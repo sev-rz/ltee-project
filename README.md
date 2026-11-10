@@ -1,6 +1,6 @@
-# LTEE variant calling
+# LTEE Project
 
-Variant calling on three E. coli samples from the Long-Term Evolution Experiment
+A reproducible analysis project for LTEE variant calling
 
 Author: Sevinch Rakhmon-Zoda
 
