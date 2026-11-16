@@ -41,3 +41,27 @@ jobs:
             reports/*.html
           if-no-files-found: ignore
           retention-days: 7
+
+  container:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Fresh clone
+        uses: actions/checkout@v7
+
+      - name: Build the image from pixi.lock
+        run: docker build -f containers/Dockerfile --build-arg ENV_NAME=pipeline -t ltee-project:0.1.0 .
+
+      - name: Download the data in the container
+        run: docker run --rm -v "$PWD":/work -w /work ltee-project:0.1.0 python scripts/download_data.py
+
+      - name: Run variant calling in the container
+        run: docker run --rm -v "$PWD":/work -w /work ltee-project:0.1.0 bash scripts/run_variant_calling.sh
+
+      - name: Variant counts must match (25, 775, 10)
+        run: |
+          for s in SRR2584863:25 SRR2584866:775 SRR2589044:10; do
+            n=$(grep -vc '^#' "results/vcf/${s%%:*}_final_variants.vcf")
+            echo "${s%%:*} $n"
+            test "$n" = "${s##*:}"
+          done

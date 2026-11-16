@@ -70,4 +70,6 @@ Docker image built from pixi.lock: `docker build --platform linux/amd64 -f conta
 
 Run the pipeline in it with the project mounted: `docker run --rm --platform linux/amd64 -v "$PWD":/work -w /work ltee-project:0.1.0 bash scripts/run_variant_calling.sh`
 
+Registry image (public): `docker pull ghcr.io/sev-rz/ltee-project:0.1.0`, digest `sha256:080311815b17d81c793eeca191e4f5740da7ff3aef79b6c7bff346cd8d0e310e`. On a cluster: `apptainer build containers/ltee-project.sif docker://ghcr.io/sev-rz/ltee-project:0.1.0`.
+
 Image ID of the build used for the results: `sha256:080311815b17d81c793eeca191e4f5740da7ff3aef79b6c7bff346cd8d0e310e`
