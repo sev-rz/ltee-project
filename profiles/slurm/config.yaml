@@ -1,0 +1,8 @@
+executor: slurm
+jobs: 20
+default-resources:
+  # Replace with your cluster's account (slurm_account) if it needs one, and
+  # check the partition name with your administrators.
+  slurm_partition: "ws-ia"
+  mem_mb: 4000
+  runtime: 30
