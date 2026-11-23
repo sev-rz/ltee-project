@@ -32,6 +32,7 @@ max_reads = 10000
 
 ```{python}
 #| label: setup
+#| echo: false
 import sys
 
 import matplotlib
