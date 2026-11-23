@@ -4,7 +4,7 @@
 # Or straight from a local Docker image, without this file:
 #   apptainer build containers/PROJECT.sif docker-daemon://PROJECT:0.1.0
 Bootstrap: docker
-From: ghcr.io/ada-lovelace/ltee-project:0.1.0
+From: ghcr.io/sev-rz/ltee-project:0.1.0
 
 %runscript
     exec /entrypoint.sh "$@"
