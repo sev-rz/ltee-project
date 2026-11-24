@@ -9,7 +9,7 @@ Built as the example project of the Reproducible and Open Science lessons.
 The analysis steps follow the Data Carpentry lesson *Wrangling
 Genomics* (CC BY 4.0).
 
-Author: Sevinch Rakhmon-Zoda
+Author: Sevinch Rakhmon-Zoda (ORCID [0009-0009-5944-4320](https://orcid.org/0009-0009-5944-4320))
 
 Contributor: Mohiraa Shafreen ([@mo-hi-raa](https://github.com/mo-hi-raa))
 

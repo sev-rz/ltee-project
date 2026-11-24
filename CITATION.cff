@@ -6,6 +6,7 @@ type: software
 authors:
   - given-names: "Sevinch"
     family-names: "Rakhmon-Zoda"
+    orcid: "https://orcid.org/0009-0009-5944-4320"
 repository-code: "https://github.com/sev-rz/ltee-project"
 license: MIT
 version: 0.1.0
