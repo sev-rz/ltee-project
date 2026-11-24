@@ -11,6 +11,8 @@ Genomics* (CC BY 4.0).
 
 Author: Sevinch Rakhmon-Zoda
 
+Contributor: Mohiraa Shafreen ([@mo-hi-raa](https://github.com/mo-hi-raa))
+
 ## Publication
 
 None yet. The data and biology are from Tenaillon et al. (2016), *Nature*
