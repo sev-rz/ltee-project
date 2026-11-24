@@ -88,4 +88,5 @@ CC0 (see Data).
 
 ## Contact
 
-Questions and problems: open an issue on GitHub.
+Questions and problems: open an issue on GitHub. Contributions: see
+`CONTRIBUTING.md`. Everyone taking part follows `CODE_OF_CONDUCT.md`.
