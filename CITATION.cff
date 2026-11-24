@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 title: "LTEE variant calling"
-abstract: "Variant calling on three E. coli samples from the Long-Term Evolution Experiment"
+abstract: "Variant calling on three E. coli clones from the Long-Term Evolution Experiment, with a sensitivity analysis of the variant filter."
 type: software
 authors:
   - given-names: "Sevinch"
@@ -9,4 +9,21 @@ authors:
 repository-code: "https://github.com/sev-rz/ltee-project"
 license: MIT
 version: 0.1.0
-date-released: "2026-11-03"
+date-released: "2026-11-24"
+keywords:
+  - reproducibility
+  - variant calling
+  - Long-Term Evolution Experiment
+references:
+  - type: article
+    title: "Tempo and mode of genome evolution in a 50,000-generation experiment"
+    authors:
+      - family-names: "Tenaillon"
+        given-names: "Olivier"
+      - name: "et al."
+    journal: "Nature"
+    volume: 536
+    start: 165
+    end: 170
+    year: 2016
+    doi: "10.1038/nature18959"
