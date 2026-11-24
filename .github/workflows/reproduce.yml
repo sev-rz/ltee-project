@@ -2,8 +2,8 @@
 # that has never seen this project? GitHub gives us a fresh Linux machine and
 # a fresh clone of the repository on every run.
 #
-# From the Reproducible and Open Science project template (MIT). Copy it into
-# any project that has a pixi.toml with a `reproduce` task.
+# From the CBIO7501 project template (MIT). Copy it into any project that has
+# a pixi.toml with a `reproduce` task.
 name: Reproduce
 
 on:
@@ -25,7 +25,7 @@ jobs:
           pixi-version: v0.83.0
           locked: true   # fail if pixi.lock does not match pixi.toml
 
-      - name: Citation file is valid
+      - name: Check the citation file
         run: pixi exec cffconvert --validate -i CITATION.cff
 
       - name: Rebuild every result from raw data
@@ -52,16 +52,16 @@ jobs:
       - name: Fresh clone
         uses: actions/checkout@v7
 
-      - name: Build the image from pixi.lock
+      - name: Build the image
         run: docker build -f containers/Dockerfile --build-arg ENV_NAME=pipeline -t ltee-project:0.1.0 .
 
-      - name: Download the data in the container
+      - name: Download the data
         run: docker run --rm -v "$PWD":/work -w /work ltee-project:0.1.0 python scripts/download_data.py
 
-      - name: Run variant calling in the container
+      - name: Run variant calling
         run: docker run --rm -v "$PWD":/work -w /work ltee-project:0.1.0 bash scripts/run_variant_calling.sh
 
-      - name: Variant counts must match (25, 775, 10)
+      - name: Check the variant counts
         run: |
           for s in SRR2584863:25 SRR2584866:775 SRR2589044:10; do
             n=$(grep -vc '^#' "results/vcf/${s%%:*}_final_variants.vcf")
