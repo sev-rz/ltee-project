@@ -64,6 +64,8 @@ and less than 400 MB of memory.
 | `results/sensitivity/` | Variant calls at each depth in `sensitivity_depths` |
 | `results/stats/` | Alignment (`flagstat`) and variant (`bcftools stats`) statistics |
 
+The rendered report is also attached to each GitHub release and archived with it on Zenodo.
+
 Expected filtered variants at minimum depth 2: SRR2589044 10, SRR2584863 25,
 SRR2584866 775.
 
