@@ -1,6 +1,6 @@
 # LTEE variant calling
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24542789.svg)](https://doi.org/10.5281/zenodo.24542789)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24543582.svg)](https://doi.org/10.5281/zenodo.24543582)
 
 Variant calling on three *E. coli* clones from population Ara-3 of Richard
 Lenski's Long-Term Evolution Experiment (LTEE), frozen at 5,000, 15,000 and
@@ -64,7 +64,7 @@ and less than 400 MB of memory.
 | `results/sensitivity/` | Variant calls at each depth in `sensitivity_depths` |
 | `results/stats/` | Alignment (`flagstat`) and variant (`bcftools stats`) statistics |
 
-The rendered report is also attached to each GitHub release and archived with it on Zenodo.
+The rendered report is attached to the GitHub release (v1.0.1 and later).
 
 Expected filtered variants at minimum depth 2: SRR2589044 10, SRR2584863 25,
 SRR2584866 775.
